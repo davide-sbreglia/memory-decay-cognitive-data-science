@@ -1,18 +1,33 @@
-# Memory Decay in LLMs – Cognitive Data Science Project
+# Moral Drift in Large Language Models
 
-This repository contains the final report, code and analysis for a short research project carried out as part of the Cognitive Data Science course at the University of Trento.
+This repository contains the code and analysis for a Cognitive Data Science project investigating **moral drift** in GPT-3.5 Turbo. The study explores how moral judgments evolve over the course of multiple interactions, especially when ethical dilemmas are framed differently.
 
-Project summary
+## 🎯 Project Goal
 
-We simulated memory decay processes using a large language model (Mistral 7B) and evaluated how forgetting patterns emerge over time or under constraint.
+The goal is to measure and visualize changes in moral acceptability ratings over time using:
 
-Key components:
-- Prompt design for memory erosion
-- Response logging and time-based analysis
-- Python scripts for plotting and parsing output
-- Final report with discussion and reflections
+- 📊 **Likert trajectory analysis** (acceptability 1–7)
+- 🔥 **Spreading Activation** in the moral foundation network
+- 🌐 **Network Metrics** (density, clustering) to assess coherence
 
-Contents
-- `report.pdf`: full report with methodology, results and references
-- `src/`: Python scripts for analysis
-- `data/`: sample data or generated outputs
+## 🧪 Experimental Design
+
+- **Model**: GPT-3.5 Turbo (temperature = 0.3)
+- **Conditions**: Neutral vs Framed
+- **Stimuli**: 6 sequential moral dilemmas per thread
+- **Threads**: 50 per condition (N = 100 total)
+
+## 🗂 Folder Structure
+
+
+## 📌 Analyses
+
+- **Likert Drift**: Acceptability scores plotted across steps (D1–D6) for each condition
+- **Spreading Activation**: Top moral foundation activations per step using cosine distance
+- **Moral Network Analysis**: Density and average clustering of semantic connections
+
+## 🖼 Sample Visuals
+
+- Drift plot with 95% CI
+- Barplot of top-activated foundations
+- Comparison of network density across conditions
