@@ -1,0 +1,20 @@
+{
+  "neutral": {
+    "num_nodes": 6,
+    "num_edges": 15,
+    "density": 1.0,
+    "clustering": 1.0,
+    "hub": "D1",
+    "hub_degree": 5,
+    "avg_path_length": 1.0
+  },
+  "framed": {
+    "num_nodes": 6,
+    "num_edges": 11,
+    "density": 0.7333333333333333,
+    "clustering": 0.7666666666666666,
+    "hub": "D6",
+    "hub_degree": 5,
+    "avg_path_length": 1.2666666666666666
+  }
+}

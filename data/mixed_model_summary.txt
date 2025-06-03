@@ -1,0 +1,19 @@
+               Mixed Linear Model Regression Results
+===================================================================
+Model:                 MixedLM    Dependent Variable:    score     
+No. Observations:      600        Method:                REML      
+No. Groups:            100        Scale:                 1.8757    
+Min. group size:       6          Log-Likelihood:        -1045.6000
+Max. group size:       6          Converged:             Yes       
+Mean group size:       6.0                                         
+-------------------------------------------------------------------
+                        Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------
+Intercept                7.581    0.180  42.046 0.000  7.228  7.935
+C(cond)[T.neutral]      -0.216    0.255  -0.847 0.397 -0.716  0.284
+step                    -0.885    0.046 -19.118 0.000 -0.976 -0.794
+C(cond)[T.neutral]:step -0.118    0.065  -1.807 0.071 -0.247  0.010
+Group Var                0.000    0.048                            
+===================================================================
+
+NOTE: The coefficient labeled C(cond)[T.neutral] represents the difference between the neutral and the empathy-framed condition. Since the empathy frame is used as the reference group, this value tells us how much lower the neutral condition scores are compared to framed at the beginning of the sequence (step 1)

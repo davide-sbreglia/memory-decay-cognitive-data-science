@@ -1,0 +1,16 @@
+{
+  "normality": {
+    "neutral": "False",
+    "framed": "False"
+  },
+  "test": {
+    "type": "Mann-Whitney U",
+    "statistic": 355.0,
+    "p_value": 5.859011099431986e-11
+  },
+  "effect_size": -1.7809352922527946,
+  "confidence_intervals": {
+    "neutral": "[-5.46 -5.2 ]",
+    "framed": "[-4.2  -3.66]"
+  }
+}
