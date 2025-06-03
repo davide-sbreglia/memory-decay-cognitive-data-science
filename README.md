@@ -2,29 +2,30 @@
 
 This repository contains the code and analysis for a Cognitive Data Science project investigating **moral drift** in GPT-3.5 Turbo. The study explores how moral judgments evolve over the course of multiple interactions, especially when ethical dilemmas are framed differently.
 
-## Project Goal
+## Overview
 
-The goal is to measure and visualize changes in moral acceptability ratings over time using:
+Large Language Models (LLMs) are used in many domains where ethical reasoning is important. However, they can show **moral drift** — gradual changes in judgment when answering similar questions over time. This project tests whether an **empathy-based framing** can reduce that drift.
 
--  **Likert trajectory analysis** (acceptability 1–7)
--  **Spreading Activation** in the moral foundation network
--  **Network Metrics** (density, clustering) to assess coherence
+We compared two conditions:
+- **Neutral**: dilemmas presented with standard wording
+- **Framed**: dilemmas preceded by a short emotional or empathic sentence
+
+GPT-3.5 was asked to rate each dilemma on a scale from 1 (morally wrong) to 7 (morally right), followed by a short justification.
+
+## Key Findings
+
+- Moral scores decreased significantly across dilemmas in the **neutral** condition, but less so in the **framed** condition (26% reduction).
+- Mixed-effects model: strong negative slope (*β* = -0.885, *p* < 0.001), and an interaction effect showing steeper decline for neutral.
+- Semantic networks built from GPT’s justifications showed **higher conceptual diversity** in the empathy condition (lower density and clustering).
 
 ## Experimental Design
 
-- **Model**: GPT-3.5 Turbo (temperature = 0.3)
-- **Conditions**: Neutral vs Framed
-- **Stimuli**: 6 sequential moral dilemmas per thread
-- **Threads**: 50 per condition (N = 100 total)
+- 100 conversation threads (50 per condition)
+- 6 classic moral dilemmas (from trolley problem to terrorism scenario)
+- Sentence embeddings via MiniLM to analyze justification structure
+- Drift analysis: Mann-Whitney U test, Cohen’s d, mixed-effects model
+- Graph metrics: density, clustering, average path length
 
-## Analyses
-
-- **Likert Drift**: Acceptability scores plotted across steps (D1–D6) for each condition
-- **Spreading Activation**: Top moral foundation activations per step using cosine distance
-- **Moral Network Analysis**: Density and average clustering of semantic connections
-
-## Sample Visuals
-
-- Drift plot with 95% CI
-- Barplot of top-activated foundations
-- Comparison of network density across conditions
+The full write-up, including visualizations and references, is available in [`paper/Moral_Trajectory_in_LLMs.pdf`](paper/Moral_Trajectory_in_LLMs.pdf).
+---
+*Project by Davide Sbreglia – MSc Data Science – University of Trento*
