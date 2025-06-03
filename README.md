@@ -4,7 +4,7 @@ This repository contains the code and analysis for a Cognitive Data Science proj
 
 ## Overview
 
-Large Language Models (LLMs) are used in many domains where ethical reasoning is important. However, they can show **moral drift** — gradual changes in judgment when answering similar questions over time. This project tests whether an **empathy-based framing** can reduce that drift.
+Large Language Models (LLMs) are used in many domains where ethical reasoning is important. However, they can show **moral drift** defined as gradual changes in judgment when answering similar questions over time. This project tests whether an **empathy-based framing** can reduce that drift.
 
 We compared two conditions:
 - **Neutral**: dilemmas presented with standard wording
