@@ -15,13 +15,12 @@ GPT-3.5 was asked to rate each dilemma on a scale from 1 (morally wrong) to 7 (m
 ## Key Findings
 
 - Moral scores decreased significantly across dilemmas in the **neutral** condition, but less so in the **framed** condition (26% reduction).
-- Mixed-effects model: strong negative slope (*β* = -0.885, *p* < 0.001), and an interaction effect showing steeper decline for neutral.
 - Semantic networks built from GPT’s justifications showed **higher conceptual diversity** in the empathy condition (lower density and clustering).
 
 ## Experimental Design
 
 - 100 conversation threads (50 per condition)
-- 6 classic moral dilemmas (from trolley problem to terrorism scenario)
+- 6 classic moral dilemmas (from trolley problem to terrorism scenario, impersonal to personal)
 - Sentence embeddings via MiniLM to analyze justification structure
 - Drift analysis: Mann-Whitney U test, Cohen’s d, mixed-effects model
 - Graph metrics: density, clustering, average path length
