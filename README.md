@@ -25,6 +25,6 @@ GPT-3.5 was asked to rate each dilemma on a scale from 1 (morally wrong) to 7 (m
 - Drift analysis: Mann-Whitney U test, Cohen’s d, mixed-effects model
 - Graph metrics: density, clustering, average path length
 
-The full write-up, including visualizations and references, is available in [`paper/Moral_Trajectory_in_LLMs.pdf`](paper/Moral_Trajectory_in_LLMs.pdf).
+The full write-up, including visualizations and references, is available in the section "paper" (paper/Moral_Trajectory_in_LLMs_.pdf).
 ---
 *Project by Davide Sbreglia – MSc Data Science – University of Trento*
