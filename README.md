@@ -1,6 +1,6 @@
 # Moral Drift in Large Language Models
 
-This repository contains the code and analysis for a Cognitive Data Science project investigating **moral drift** in GPT-3.5 Turbo. The study explores how moral judgments evolve over the course of multiple interactions, especially when ethical dilemmas are framed differently.
+This repository contains the code and analysis for a Cognitive Data Science project investigating **moral drift** in GPT-3.5 Turbo. 
 
 ## Overview
 
@@ -14,8 +14,8 @@ GPT-3.5 was asked to rate each dilemma on a scale from 1 (morally wrong) to 7 (m
 
 ## Key Findings
 
-- Moral scores decreased significantly across dilemmas in the **neutral** condition, but less so in the **framed** condition (26% reduction).
-- Semantic networks built from GPT’s justifications showed **higher conceptual diversity** in the empathy condition (lower density and clustering).
+- Moral scores decreased significantly across dilemmas in the **neutral** condition, but was different in the **framed** condition (26% reduction).
+- Semantic networks built from GPT’s justifications showed **higher conceptual diversity** in the empathy condition.
 
 ## Experimental Design
 
